@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+    --black-color-0: rgb(0, 0, 0);
+    --color-white-255: rgb(255,255,255);
+    --color-gray-170: rgb(170, 170, 170);
+    --color-purple: rgb(23, 59, 108);
+    --primary-color: rgb(20, 157, 221);
+    --color-font: rgb(39, 40, 41);
+    --font-weigth-400: 400;
+    --font-weigth-500: 500;
+    --font-weigth-600: 600;
+    --font-weigth-700: 700;
+    --font-size-20: 20px;
+    --font-size-15: 15px;
+    --font-size-32: 32px;
+    --font-size-25: 25px;
+    --font-size-10: 10px;
+}
+
+html {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 62.5%;
+    line-height: 1.5rem;
+}
+a {
+    text-decoration: none;
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+}
+
+.heading {
+    color: var(--color-purple);
+    font-size: var(--font-size-32);
+    font-weight: var(--font-weigth-700);
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.heading::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 60px;
+    height: 3px;
+    border-radius: 2px;
+    background-color: var(--primary-color);
+    /* background-image: linear-gradient(45deg, var(--primary-color), var(--color-purple)); */
+    bottom: -5px;
+    left: 0;
+}
+
+.skill::before {
+    content: '';
+    display: block;
+    height: 10px;
+    width: 100%;
+    background-color: var(--color-gray-170);
+    position: absolute;
+    left: 0;
+    bottom: -100%;
+}
+
+.skill::after {
+    content: '';
+    display: block;
+    height: 10px;
+    width: 50%;
+    background-color: var(--primary-color);
+    position: absolute;
+    left: 0;
+    bottom: -100%;
+}
+
+.hidden-on-mobile {
+    display: none;
+}
+
+.hidden {
+    display: none;
+}

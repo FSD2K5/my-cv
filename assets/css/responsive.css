@@ -1,0 +1,66 @@
+/* ========= TABLET ======= */
+
+@media only screen and (max-width: 1199px) and (min-width: 761px){
+    
+}
+
+/* ========= PHONE ======== */
+@media only screen and (max-width: 760px){
+    .wrapper {
+        width: 100vw;
+        display: block;
+        margin: 0;
+    }
+    .header {
+        display: none;
+    }
+    .container {
+        width: 100%;
+        margin: 0;
+    }
+    .home > .home__img::before {
+        display: none;
+    }
+    .home > .home__img {
+        height: 500px;
+    }
+    .resume-block {
+        flex-direction: column;
+    }
+    .education-block,
+    .development-block {
+        width: 100% !important;
+    }
+    .about-skills > .skills__list {
+        grid-template-columns: 1fr;
+    }
+    .info-sender {
+        flex-direction: column;
+    }
+    .info-sender__input {
+        width: 100%;
+    }
+    .info-sender__input > input {
+        width: 100%;
+    }
+    .about-infomations {
+        flex-direction: column;
+    }
+    .about-infomation__introduce > .info__table {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .home__title {
+        display: none;
+    }
+    .home {
+        height: 500px;
+    }
+}
+
+/* ========= LAPTOP ======= */
+
+@media only screen and (min-width: 1200px){
+    
+}
